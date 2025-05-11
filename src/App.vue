@@ -42,8 +42,7 @@ watch(
 );
 
 function openModal(id) {
-  // flip the right boolean
-  if (modals[id]) {
+  if (Object.prototype.hasOwnProperty.call(modals, id)) {
     modals[id] = true;
   } else {
     console.warn(`No modal found for id "${id}"`);

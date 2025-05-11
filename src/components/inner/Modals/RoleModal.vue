@@ -15,7 +15,9 @@
           &times;
         </button>
 
-        <h2 class="text-xl font-bold border-b-2 border-indigo-500 pb-1 mb-4">
+        <h2
+          class="text-xl text-white font-bold border-b-2 border-indigo-500 pb-1 mb-4"
+        >
           What Happened<span class="text-red-500">!</span>
         </h2>
 

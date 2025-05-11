@@ -5,6 +5,8 @@
     >
       Website Powered by AWS
     </h3>
+
+    <!-- Icons Row -->
     <div class="flex justify-center gap-2">
       <img
         v-for="icon in icons"
@@ -12,15 +14,32 @@
         :src="icon.src"
         :alt="icon.alt"
         class="w-10 cursor-pointer rounded-md hover:opacity-80"
-        @mouseover="$emit('hover', icon.description)"
-        @mouseout="$emit('hover', '')"
+        @mouseover="currentDesc = icon.description"
+        @mouseout="currentDesc = ''"
       />
+    </div>
+
+    <!-- Fixed-height 3-line description box -->
+    <div
+      class="mt-2 text-center text-sm text-gray-200 leading-snug overflow-hidden"
+    >
+      <!-- 
+        Remove `truncate`. 
+        Use `break-words` so long text wraps.
+        Use the line-clamp plugin if you have it,
+        otherwise it'll simply wrap naturally.
+      -->
+      <p class="line-clamp-3">
+        {{ currentDesc }}
+      </p>
     </div>
   </section>
 </template>
 
 <script setup>
-const props = defineProps({
+import { ref } from "vue";
+
+const { icons } = defineProps({
   icons: {
     type: Array,
     default: () => [
@@ -70,5 +89,5 @@ const props = defineProps({
   },
 });
 
-defineEmits(["hover"]);
+const currentDesc = ref("");
 </script>

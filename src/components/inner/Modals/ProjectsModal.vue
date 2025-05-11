@@ -63,16 +63,12 @@
                     alt="DynamoDB"
                     class="w-10 cursor-pointer rounded-md hover:opacity-80"
                   />
-                  <div class="relative w-10 h-10 bg-white rounded-md">
+                  <div class="relative w-10 h-10 rounded-md">
                     <img
-                      src="/images/project-icons/reactblack.svg"
-                      alt="React Icon"
-                      class="w-full h-full object-contain rounded-md border-2 border-green-400"
+                      src="/images/project-icons/vue.svg"
+                      alt="Vue Icon"
+                      class="bg-white w-10 cursor-pointer rounded-md hover:opacity-80"
                     />
-                    <span
-                      class="absolute -bottom-4 left-1/2 -translate-x-1/2 text-[10px] text-green-400 font-semibold"
-                      >Soon</span
-                    >
                   </div>
                 </div>
                 <a

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gray-800 p-6 rounded shadow flex flex-col justify-between h-full"
+    class="bg-gray-800 text-white p-6 rounded shadow flex flex-col justify-between h-full"
   >
     <Certifications @open="$emit('open', $event)" />
     <!-- visitor count logic -->

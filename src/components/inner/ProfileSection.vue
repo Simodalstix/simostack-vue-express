@@ -5,7 +5,9 @@
       alt="Profile"
       class="rounded-full w-40 h-auto mx-auto border-4 border-white shadow-md"
     />
-    <h2 class="text-2xl font-bold mt-4 border-b-2 border-indigo-500 pb-1">
+    <h2
+      class="text-2xl font-bold mt-4 border-b-2 text-white border-indigo-500 pb-1"
+    >
       {{ name }}
     </h2>
     <p class="font-semibold text-cyan-400 mt-2 mb-2 text-sm">
